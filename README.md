@@ -1,6 +1,6 @@
 # TraceSWO
-Simple example that shows how ITM SWO tracing works on STM32F103 using VSCode 
-Project uses _Cortex-Debug_ and _swoparser.py_
+Simple example that shows how ITM SWO tracing works on STM32F103 using VSCode  
+Project uses [Cortex-Debug](https://github.com/Marus/cortex-debug) and [swo_parser.py](https://github.com/robertlong13/SWO-Parser)
   
 ## How to use
 Copy folder _swoTrace_ to root of your project  
