@@ -32,7 +32,7 @@
                 "statusbar": {
                     "color" : "#dfff86",
                     "detail" : "Server start",
-                    "label" : "$(layers) Server",
+                    "label" : "$(rocket) Server",
                     "hide" : false
                 }
             },
@@ -50,7 +50,7 @@
                 "statusbar": {
                     "color" : "#ff9af2",
                     "detail" : "SWO trace terminal",
-                    "label" : "$(layers) SWO",
+                    "label" : "$(console) SWO",
                     "hide" : false
                 }
             },

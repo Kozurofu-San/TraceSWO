@@ -1,4 +1,5 @@
 param([int] $cpu_frequency = 72000000)
+Stop-Process -Name openocd -ErrorAction SilentlyContinue
 openocd `
 -f interface/stlink.cfg `
 -f target/stm32f1x.cfg `
