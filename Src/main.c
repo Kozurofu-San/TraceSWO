@@ -98,7 +98,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   int cnt = 0;
 
-  printf("SWO itin, cnt is %d\r\n", cnt); // printf is redirected to SWO by default
+  printf("*** SWO is initialized, cnt is %d ***\r\n", cnt); // printf is redirected to SWO by default
 
   while (1)
   {
