@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "group": "build",
+            "type": "shell",
+            "presentation": {
+                "clear": true
+            },
+            "command": ".vscode/build.ps1",
+            "options": {
+                "cwd": "${workspaceRoot}",
+                "statusbar": {
+                    "color" : "#9bffa3",
+                    "detail" : "Build sources and subprojects",
+                    "label" : "$(gear) Build",
+                    "hide" : false
+                }
+            },
+        },
+        {
+            "label": "Server",
+            "group": "build",
+            "type": "shell",
+            "presentation": {
+                "clear": true
+            },
+            "command": ".vscode/mcuServer.ps1",
+            "options": {
+                "cwd": "${workspaceRoot}",
+                "statusbar": {
+                    "color" : "#dfff86",
+                    "detail" : "Server start",
+                    "label" : "$(layers) Server",
+                    "hide" : false
+                }
+            },
+        },
+        {
+            "label": "SWO",
+            "group": "build",
+            "type": "shell",
+            "presentation": {
+                "clear": true
+            },
+            "command": "python ${workspaceRoot}/.vscode/swo_parser.py ${config:mcu_server} 2001",
+            "options": {
+                "cwd": "${workspaceRoot}",
+                "statusbar": {
+                    "color" : "#ff9af2",
+                    "detail" : "SWO trace terminal",
+                    "label" : "$(layers) SWO",
+                    "hide" : false
+                }
+            },
+        },
+    ]
+}
