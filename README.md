@@ -12,5 +12,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME} swoTrace)
 In _swoTrace.h_ specify your MCU  
 Add to your C file when trace is needed
 ```c
-#include swoTrace.h
+#include "swoTrace.h"
 ```
