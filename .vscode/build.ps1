@@ -10,5 +10,6 @@ Set-Location $build_folder
 # cmake --trace .
 # cmake --debug-output .
 cmake -G Ninja $dir
-cmake --build . --config $Config
+cmake -DCMAKE_BUILD_TYPE="${Config}" .. 
+cmake --build .
 Set-Location $dir

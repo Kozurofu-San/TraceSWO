@@ -39,6 +39,7 @@ void printString(uint32_t channel, char *symbol)
         ITM_SendCharToChannel(channel, *symbol);
         symbol++;
     }
+    ITM_SendCharToChannel(channel, '\n');
 }
 
 void LOGI(const char *msg, ...)  // Info
