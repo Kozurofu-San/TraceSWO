@@ -91,7 +91,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  swoInit (0xFFFFFFFF, SystemCoreClock , 2250000);  // All ITM ports, 72 MHz, 2.25 Mbps (max speed for ST-LINK V2, 8 us per byte)
+  swoInit (0xFFFFFFFF, SystemCoreClock , SWO_STLINK_V2_MAX_SPEED);  // All ITM ports, 72 MHz, 2.25 Mbps (max speed for ST-LINK V2, 8 us per byte)
   /* USER CODE END 2 */
 
   /* Infinite loop */
