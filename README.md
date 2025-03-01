@@ -6,11 +6,11 @@ This example runs in Blue Pill and STM32_smart boards. You need to connect SWO a
 ## How to use
 Clone repo as submodele or copy _swoTrace_ and _.vscode_ folders to root of your project  
 ```py
-git submodule add https://github.com/Kozurofu-San/TraceSWO.git subprojects/swoTrace
+git submodule add https://github.com/Kozurofu-San/TraceSWO.git submodules/swoTrace
 ```
 In root _CMakeLists.txt_ write  
 ```c
-add_subdirectory(subprojects/swoTrace)   # For submodule
+add_subdirectory(submodules/swoTrace)   # For submodule
 add_subdirectory(swoTrace)   # For copied falder
 
 target_link_libraries(${CMAKE_PROJECT_NAME} swoTrace)
